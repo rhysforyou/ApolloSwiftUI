@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,18 @@
 		5780AA2E23ECEB9300A01F43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5780AA2D23ECEB9300A01F43 /* Assets.xcassets */; };
 		5780AA3123ECEB9300A01F43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5780AA3023ECEB9300A01F43 /* Preview Assets.xcassets */; };
 		5780AA3423ECEB9300A01F43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5780AA3223ECEB9300A01F43 /* LaunchScreen.storyboard */; };
+		5780AA3D23ECEBF500A01F43 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5780AA3C23ECEBF500A01F43 /* Apollo */; };
+		5780AA3F23ECEBF500A01F43 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 5780AA3E23ECEBF500A01F43 /* ApolloWebSocket */; };
+		5780AA4323ECED0700A01F43 /* LaunchList.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5780AA4223ECED0700A01F43 /* LaunchList.graphql */; };
+		5780AA4523ECED2100A01F43 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5780AA4423ECED2100A01F43 /* API.swift */; };
+		5780AA4723ECED4D00A01F43 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5780AA4623ECED4D00A01F43 /* Network.swift */; };
+		5780AA4923ECEDE700A01F43 /* ApolloResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5780AA4823ECEDE700A01F43 /* ApolloResource.swift */; };
+		5780AA4C23ECF80100A01F43 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5780AA4B23ECF80100A01F43 /* SDWebImageSwiftUI */; };
+		578771E223EFC7EB00AD96CD /* API+Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578771E123EFC7EB00AD96CD /* API+Fixtures.swift */; };
+		578771E623EFC97A00AD96CD /* API+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578771E523EFC97A00AD96CD /* API+App.swift */; };
+		578771E823EFC9AA00AD96CD /* LaunchListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578771E723EFC9AA00AD96CD /* LaunchListItem.swift */; };
+		578771EA23EFC9D800AD96CD /* LaunchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578771E923EFC9D800AD96CD /* LaunchList.swift */; };
+		578771EC23EFCA0000AD96CD /* LaunchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578771EB23EFCA0000AD96CD /* LaunchDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +36,16 @@
 		5780AA3023ECEB9300A01F43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5780AA3323ECEB9300A01F43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5780AA3523ECEB9300A01F43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5780AA4123ECEC9A00A01F43 /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		5780AA4223ECED0700A01F43 /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
+		5780AA4423ECED2100A01F43 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		5780AA4623ECED4D00A01F43 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5780AA4823ECEDE700A01F43 /* ApolloResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloResource.swift; sourceTree = "<group>"; };
+		578771E123EFC7EB00AD96CD /* API+Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Fixtures.swift"; sourceTree = "<group>"; };
+		578771E523EFC97A00AD96CD /* API+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+App.swift"; sourceTree = "<group>"; };
+		578771E723EFC9AA00AD96CD /* LaunchListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListItem.swift; sourceTree = "<group>"; };
+		578771E923EFC9D800AD96CD /* LaunchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchList.swift; sourceTree = "<group>"; };
+		578771EB23EFCA0000AD96CD /* LaunchDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5780AA4C23ECF80100A01F43 /* SDWebImageSwiftUI in Frameworks */,
+				5780AA3D23ECEBF500A01F43 /* Apollo in Frameworks */,
+				5780AA3F23ECEBF500A01F43 /* ApolloWebSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +83,14 @@
 			children = (
 				5780AA2723ECEB8F00A01F43 /* AppDelegate.swift */,
 				5780AA2923ECEB8F00A01F43 /* SceneDelegate.swift */,
-				5780AA2B23ECEB8F00A01F43 /* ContentView.swift */,
+				578771E423EFC94F00AD96CD /* Views */,
+				578771E323EFC94200AD96CD /* Model */,
+				5780AA4123ECEC9A00A01F43 /* schema.json */,
 				5780AA2D23ECEB9300A01F43 /* Assets.xcassets */,
 				5780AA3223ECEB9300A01F43 /* LaunchScreen.storyboard */,
 				5780AA3523ECEB9300A01F43 /* Info.plist */,
 				5780AA2F23ECEB9300A01F43 /* Preview Content */,
+				5780AA4223ECED0700A01F43 /* LaunchList.graphql */,
 			);
 			path = ApolloSwiftUI;
 			sourceTree = "<group>";
@@ -71,8 +99,31 @@
 			isa = PBXGroup;
 			children = (
 				5780AA3023ECEB9300A01F43 /* Preview Assets.xcassets */,
+				578771E123EFC7EB00AD96CD /* API+Fixtures.swift */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		578771E323EFC94200AD96CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5780AA4423ECED2100A01F43 /* API.swift */,
+				578771E523EFC97A00AD96CD /* API+App.swift */,
+				5780AA4623ECED4D00A01F43 /* Network.swift */,
+				5780AA4823ECEDE700A01F43 /* ApolloResource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		578771E423EFC94F00AD96CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5780AA2B23ECEB8F00A01F43 /* ContentView.swift */,
+				578771E923EFC9D800AD96CD /* LaunchList.swift */,
+				578771E723EFC9AA00AD96CD /* LaunchListItem.swift */,
+				578771EB23EFCA0000AD96CD /* LaunchDetail.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +133,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5780AA3823ECEB9300A01F43 /* Build configuration list for PBXNativeTarget "ApolloSwiftUI" */;
 			buildPhases = (
+				5780AA4023ECEC2100A01F43 /* Apollo CLI */,
 				5780AA2023ECEB8F00A01F43 /* Sources */,
 				5780AA2123ECEB8F00A01F43 /* Frameworks */,
 				5780AA2223ECEB8F00A01F43 /* Resources */,
@@ -91,6 +143,11 @@
 			dependencies = (
 			);
 			name = ApolloSwiftUI;
+			packageProductDependencies = (
+				5780AA3C23ECEBF500A01F43 /* Apollo */,
+				5780AA3E23ECEBF500A01F43 /* ApolloWebSocket */,
+				5780AA4B23ECF80100A01F43 /* SDWebImageSwiftUI */,
+			);
 			productName = ApolloSwiftUI;
 			productReference = 5780AA2423ECEB8F00A01F43 /* ApolloSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +176,10 @@
 				Base,
 			);
 			mainGroup = 5780AA1B23ECEB8F00A01F43;
+			packageReferences = (
+				5780AA3B23ECEBF500A01F43 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				5780AA4A23ECF80100A01F43 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 5780AA2523ECEB8F00A01F43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,20 +196,50 @@
 			files = (
 				5780AA3423ECEB9300A01F43 /* LaunchScreen.storyboard in Resources */,
 				5780AA3123ECEB9300A01F43 /* Preview Assets.xcassets in Resources */,
+				5780AA4323ECED0700A01F43 /* LaunchList.graphql in Resources */,
 				5780AA2E23ECEB9300A01F43 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5780AA4023ECEC2100A01F43 /* Apollo CLI */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Apollo CLI";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5780AA2023ECEB8F00A01F43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				578771EA23EFC9D800AD96CD /* LaunchList.swift in Sources */,
+				5780AA4723ECED4D00A01F43 /* Network.swift in Sources */,
 				5780AA2823ECEB8F00A01F43 /* AppDelegate.swift in Sources */,
+				578771E823EFC9AA00AD96CD /* LaunchListItem.swift in Sources */,
 				5780AA2A23ECEB8F00A01F43 /* SceneDelegate.swift in Sources */,
+				578771E223EFC7EB00AD96CD /* API+Fixtures.swift in Sources */,
+				5780AA4523ECED2100A01F43 /* API.swift in Sources */,
+				5780AA4923ECEDE700A01F43 /* ApolloResource.swift in Sources */,
+				578771E623EFC97A00AD96CD /* API+App.swift in Sources */,
 				5780AA2C23ECEB8F00A01F43 /* ContentView.swift in Sources */,
+				578771EC23EFCA0000AD96CD /* LaunchDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +433,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5780AA3B23ECEBF500A01F43 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.21.0;
+			};
+		};
+		5780AA4A23ECF80100A01F43 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5780AA3C23ECEBF500A01F43 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5780AA3B23ECEBF500A01F43 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		5780AA3E23ECEBF500A01F43 /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5780AA3B23ECEBF500A01F43 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		5780AA4B23ECF80100A01F43 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5780AA4A23ECF80100A01F43 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5780AA1C23ECEB8F00A01F43 /* Project object */;
 }
