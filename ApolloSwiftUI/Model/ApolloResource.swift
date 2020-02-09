@@ -46,3 +46,12 @@ extension ApolloResource where Query == LaunchListQuery {
         return []
     }
 }
+
+extension ApolloResource where Query == LaunchDetailsQuery {
+    var launch: LaunchDetailsQuery.Data.Launch? {
+        if case let .success(data) = result {
+            return data.data?.launch
+        }
+        return nil
+    }
+}

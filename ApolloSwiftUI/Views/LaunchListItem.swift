@@ -8,17 +8,16 @@
 
 import SwiftUI
 import Apollo
-import SDWebImageSwiftUI
+import KingfisherSwiftUI
 
 struct LaunchListItem: View {
     let launch: LaunchSummary
 
     var body: some View {
         HStack {
-            WebImage(url: launch.missionPatchURL)
+            KFImage(launch.missionPatchURL)
                 .resizable()
-                .placeholder(Image("Placeholder"))
-                .indicator(.activity)
+                .placeholder { Image("Placeholder").resizable() }
                 .frame(width: 44, height: 44)
             VStack(alignment: .leading) {
                 Text(launch.mission?.name ?? "Unknown Mission")

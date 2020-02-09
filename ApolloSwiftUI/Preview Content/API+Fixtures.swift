@@ -8,6 +8,8 @@
 
 import Foundation
 
+#if DEBUG
+
 extension LaunchListQuery.Data.Launch.Launch {
     static var fixture: LaunchListQuery.Data.Launch.Launch {
         LaunchListQuery.Data.Launch.Launch(
@@ -20,3 +22,23 @@ extension LaunchListQuery.Data.Launch.Launch {
         )
     }
 }
+
+extension LaunchDetailsQuery.Data.Launch {
+    static var fixture: LaunchDetailsQuery.Data.Launch {
+        return LaunchDetailsQuery.Data.Launch(
+            id: "89",
+            site: "CCAFS SLC 40",
+            mission: LaunchDetailsQuery.Data.Launch.Mission(
+                name: "Starlink 3",
+                missionPatch: "https://images2.imgbox.com/d2/3b/bQaWiil0_o.png"
+            ),
+            rocket: LaunchDetailsQuery.Data.Launch.Rocket(
+                name: "Falcon 9",
+                type: "FT"
+            ),
+            isBooked: false
+        )
+    }
+}
+
+#endif
