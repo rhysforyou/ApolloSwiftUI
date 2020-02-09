@@ -13,9 +13,19 @@ struct LaunchList: View {
     @ObservedObject var resource = ApolloResource(query: LaunchListQuery())
 
     var body: some View {
-        List(resource.launches) { launch in
-            NavigationLink(destination: LaunchDetail(launchID: launch.id)) {
-                LaunchListItem(launch: launch)
+        List {
+            if resource.result == nil {
+                HStack {
+                    ActivityIndicator(isAnimating: .constant(true), style: .medium)
+                    Text("Loading…")
+                }
+            } else if resource.error != nil {
+                Text("ERROR: \(resource.error!.localizedDescription)")
+            }
+            ForEach(resource.launches) { launch in
+                NavigationLink(destination: LaunchDetail(launchID: launch.id)) {
+                    LaunchListItem(launch: launch)
+                }
             }
         }
         .alert(isPresented: $resource.shouldPresentError) {

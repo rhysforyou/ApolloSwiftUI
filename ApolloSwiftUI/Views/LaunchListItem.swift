@@ -17,7 +17,10 @@ struct LaunchListItem: View {
         HStack {
             KFImage(launch.missionPatchURL)
                 .resizable()
-                .placeholder { Image("Placeholder").resizable() }
+                .placeholder {
+                    Circle()
+                        .foregroundColor(Color(UIColor.secondarySystemBackground))
+                }
                 .frame(width: 44, height: 44)
             VStack(alignment: .leading) {
                 Text(launch.mission?.name ?? "Unknown Mission")

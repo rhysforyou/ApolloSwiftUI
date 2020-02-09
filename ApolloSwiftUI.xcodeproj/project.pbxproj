@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5761741F23EFDA6500E2BC92 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5761741E23EFDA6500E2BC92 /* ActivityIndicator.swift */; };
 		5780AA2823ECEB8F00A01F43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5780AA2723ECEB8F00A01F43 /* AppDelegate.swift */; };
 		5780AA2A23ECEB8F00A01F43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5780AA2923ECEB8F00A01F43 /* SceneDelegate.swift */; };
 		5780AA2C23ECEB8F00A01F43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5780AA2B23ECEB8F00A01F43 /* ContentView.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5761741E23EFDA6500E2BC92 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		5780AA2423ECEB8F00A01F43 /* ApolloSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApolloSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5780AA2723ECEB8F00A01F43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5780AA2923ECEB8F00A01F43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				578771E923EFC9D800AD96CD /* LaunchList.swift */,
 				578771E723EFC9AA00AD96CD /* LaunchListItem.swift */,
 				578771EB23EFCA0000AD96CD /* LaunchDetail.swift */,
+				5761741E23EFDA6500E2BC92 /* ActivityIndicator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				5780AA4723ECED4D00A01F43 /* Network.swift in Sources */,
 				5780AA2823ECEB8F00A01F43 /* AppDelegate.swift in Sources */,
 				578771E823EFC9AA00AD96CD /* LaunchListItem.swift in Sources */,
+				5761741F23EFDA6500E2BC92 /* ActivityIndicator.swift in Sources */,
 				5780AA2A23ECEB8F00A01F43 /* SceneDelegate.swift in Sources */,
 				578771E223EFC7EB00AD96CD /* API+Fixtures.swift in Sources */,
 				5780AA4523ECED2100A01F43 /* API.swift in Sources */,

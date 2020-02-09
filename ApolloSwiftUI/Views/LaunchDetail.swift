@@ -24,7 +24,10 @@ struct LaunchDetail: View {
             } else if resource.error != nil {
                 Text(resource.error!.localizedDescription)
             } else {
-                Text("Loading…")
+                HStack {
+                    ActivityIndicator(isAnimating: .constant(true), style: .medium)
+                    Text("Loading…")
+                }
             }
         }
         .onAppear(perform: resource.fetch)
@@ -79,7 +82,13 @@ struct LaunchDetailsContent: View {
             HStack(spacing: 16) {
                 if missionPatchURL != nil {
                     KFImage(missionPatchURL)
-                        .placeholder { Image("Placeholder").resizable() }
+                        .placeholder {
+                            ZStack(alignment: .center) {
+                                Circle()
+                                    .foregroundColor(Color(UIColor.secondarySystemBackground))
+                                ActivityIndicator(isAnimating: .constant(true), style: .large)
+                            }
+                        }
                         .resizable()
                         .frame(width: 128, height: 128)
                 }
